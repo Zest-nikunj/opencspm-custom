@@ -1,0 +1,90 @@
+# General
+.DS_Store
+docker/tmp
+docker/log
+.init
+.viminfo
+.bash_history
+*.swp
+.env
+.idea
+
+# Ruby / RMV
+.ruby-version
+.ruby-gemset
+.bundle
+.gem
+.irb_history
+
+# Docker
+.psqlrc
+.bashrc
+
+# UI
+docker/ui/package-lock.json
+docker/ui/dist/*
+docker/ui/cypress/videos/*
+docker/ui/cypress/screenshots/*
+
+# Rails 
+.local
+*.rbc
+capybara-*.html
+/public/system
+public/*
+/coverage/
+/spec/tmp
+*.orig
+
+# Ignore test data
+assets/test/*
+assets/custom/*
+
+# Ignore all logfiles and tempfiles.
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+# TODO Comment out this rule if you are OK with secrets being uploaded to the repo
+config/initializers/secret_token.rb
+config/master.key
+master.key
+
+# dotenv
+#.env
+
+# Environment normalization:
+/.bundle
+/vendor/bundle
+
+# unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
+.rvmrc
+
+# Ignore Byebug command history file.
+.byebug_history
+
+# Ignore node_modules
+node_modules/
+
+# Ignore precompiled javascript packs
+/public/packs
+/public/packs-test
+/public/assets
+
+# Ignore yarn files
+.yarnrc
+yarn-error.log
+yarn-debug.log*
+.yarn-integrity
+
+# Ignore uploaded files in development
+/storage/*
+!/storage/.keep
+
+# Ignore pry
+docker/.local/*
+
+# tmp load files
+docker/load_dir/*.json
+docker/load_dir/tmp-*

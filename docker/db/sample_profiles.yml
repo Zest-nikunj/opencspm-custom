@@ -1,0 +1,71 @@
+---
+- name: All AWS
+  platform: AWS
+  author: Darkbit
+  tags:
+    - aws
+- name: All Google Cloud
+  platform: Google Cloud
+  author: Darkbit
+  tags:
+    - google cloud
+- name: All Kubernetes
+  platform: Kubernetes
+  author: Darkbit
+  tags:
+    - kubernetes
+- name: AWS Well Architected (Security)
+  platform: AWS
+  author: Darkbit
+  tags:
+    - aws-wa-security
+- name: AWS Config/Conformance Packs
+  platform: AWS
+  author: Darkbit
+  tags:
+    - aws-cfg
+- name: NIST Cybersecurity Framework (CSF)
+  platform: Any
+  author: Darkbit
+  tags:
+    - nist-csf
+- name: NIST 800-53 rev4
+  platform: Any
+  author: Darkbit
+  tags:
+    - nist-800-53-rev4
+- name: NIST 800-171
+  platform: Any
+  author: Darkbit
+  tags:
+    - nist-800-171
+- name: PCI DSS 3.2.1
+  platform: Any
+  author: Darkbit
+  tags:
+    - pci-dss-3.2.1
+- name: HIPAA
+  platform: Any
+  author: Darkbit
+  tags:
+    - hipaa
+- name: CIS Benchmarks
+  platform: Any
+  author: Darkbit
+  tags:
+    - cis
+- name: FedRAMP
+  platform: Any
+  author: Darkbit
+  tags:
+    - fedramp-moderate
+    - fedramp-low
+- name: Cybersecurity Maturity Model Certification (CMMC)
+  platform: Any
+  author: Darkbit
+  tags:
+    - cmmc-level1
+    - cmmc-level2
+    - cmmc-level3
+    - cmmc-level4
+    - cmmc-level5
