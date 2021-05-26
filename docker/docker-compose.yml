@@ -6,7 +6,7 @@ x-app: &app
     RAILS_ENV: ${RAILS_ENV:-production}
     RAILS_SERVE_STATIC_FILES: 1
     RAILS_LOG_TO_STDOUT: 1
-  image: gcr.io/opencspm/engine:0.1.21
+  image: potholes/engine:0.1.54
   tmpfs:
     - /tmp
 
@@ -63,7 +63,7 @@ services:
       - redis
 
   db:
-    image: gcr.io/opencspm/postgres:13.2
+    image: potholes/postgres:13.2
     hostname: db
     volumes:
       - .dockerdev/.psqlrc:/root/.psqlrc:ro
@@ -78,7 +78,7 @@ services:
       interval: 5s
 
   redis:
-    image: gcr.io/opencspm/redisgraph:edge-0.0.1
+    image: potholes/redisgraph:edge-0.0.1
     hostname: redis
     volumes:
       - redis:/data
